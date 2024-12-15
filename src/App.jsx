@@ -1,5 +1,6 @@
 
 import './App.css'
+import HookForm from './Components/HookForm/HookForm'
 import RefForm from './Components/RefForm/RefForm'
 import SimpleForm from './Components/SimpleForm/SimpleForm'
 import StateFullForm from './Components/StateFullFORM/StateFullForm'
@@ -16,7 +17,10 @@ function App() {
 
       {/* <StateFullForm></StateFullForm> */}
 
-      <RefForm></RefForm>
+      {/* <RefForm></RefForm>
+       */}
+
+       <HookForm></HookForm>
     </>
   )
 }
