@@ -15,6 +15,8 @@ const SimpleForm = () => {
                 <input type="text" name="name" placeholder="Enter your name" /> <br />
                 <input type="email" name="email" placeholder="Enter your email" /> <br />
                 <input type="number" name="phone" placeholder="Enter your phone number" /> <br />
+                <input type="password" placeholder="Enter your phone number"  value='password' />  
+                
                 <input type="submit" value="Submit" />
             </form>
         </div>
