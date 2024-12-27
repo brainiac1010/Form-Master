@@ -1,5 +1,6 @@
 
 import './App.css'
+import GrandPa from './Components/Granpa/GrandPa'
 import HookForm from './Components/HookForm/HookForm'
 import RefForm from './Components/RefForm/RefForm'
 import SimpleForm from './Components/SimpleForm/SimpleForm'
@@ -7,27 +8,28 @@ import StateFullForm from './Components/StateFullFORM/StateFullForm'
 
 function App() {
 
-  const handleSignUpSubmit = (data) => {
+//   const handleSignUpSubmit = (data) => {
   
-   console.log('sign up data',data)
-}
+//    console.log('sign up data',data)
+// }
 
 
  
-const handleUpdateProfile = (data) => {
+// const handleUpdateProfile = (data) => {
   
-  console.log('update profile data',data)
-}
+//   console.log('update profile data',data)
+// }
 
   return (
     <>
 
-      <h1>Vite + React</h1>
+      <h1>Form Master</h1>
+      <GrandPa></GrandPa>
 
       {/* <SimpleForm></SimpleForm> */}
 
       {/* <StateFullForm></StateFullForm> */}
-
+{/* 
       <RefForm formTitle={'Sign Up'}
        handleSubmit={handleSignUpSubmit}>
 
@@ -46,7 +48,7 @@ const handleUpdateProfile = (data) => {
   <p>keep your profile update</p>
 </div>
 
-      </RefForm>
+      </RefForm> */}
       
 
        {/* <HookForm></HookForm> */}
