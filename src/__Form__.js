@@ -8,4 +8,8 @@
  3.controled element : one object in a state holding all the input fields value 
 
 4. uncontroled element : useRef to creat a referance  to the element and access value  by using ile : nameRef . current .value 
+
+5.use hook to handel states  and submit  and error .example is  react hook form.jsx
+
+5. Reusable component.
 **/ 

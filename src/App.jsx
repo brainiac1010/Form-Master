@@ -7,6 +7,17 @@ import StateFullForm from './Components/StateFullFORM/StateFullForm'
 
 function App() {
 
+  const handleSignUpSubmit = (data) => {
+  
+   console.log('sign up data',data)
+}
+
+
+ 
+const handleUpdateProfile = (data) => {
+  
+  console.log('update profile data',data)
+}
 
   return (
     <>
@@ -17,10 +28,28 @@ function App() {
 
       {/* <StateFullForm></StateFullForm> */}
 
-      {/* <RefForm></RefForm>
-       */}
+      <RefForm formTitle={'Sign Up'}
+       handleSubmit={handleSignUpSubmit}>
 
-       <HookForm></HookForm>
+        <div>
+          <h4>SignUp</h4>
+          <p>Plse sign up right now</p>
+        </div>
+       </RefForm>
+
+
+      <RefForm formTitle={'Profile Update'}
+      handleSubmit={handleUpdateProfile}  
+      submitBtnText='Update'>
+<div>
+  <h4>Update profile</h4>
+  <p>keep your profile update</p>
+</div>
+
+      </RefForm>
+      
+
+       {/* <HookForm></HookForm> */}
     </>
   )
 }
