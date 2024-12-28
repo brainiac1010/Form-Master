@@ -1,13 +1,13 @@
 import Friend from "../friend/friend";
 
 
-const Myself = () => {
+const Myself = ({asset}) => {
     return (
         <div>
             <h2>Myself</h2>
 
             <section className="flex">
-<Friend></Friend>
+<Friend  asset={asset}></Friend>
 
             </section>
         </div>
