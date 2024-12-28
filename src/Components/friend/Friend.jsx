@@ -1,16 +1,16 @@
+import { AssetContext } from "../Granpa/GrandPa";
+import { useContext } from "react";
 
+const Friend = ({ asset }) => {
+  const gift = useContext(AssetContext);
 
-const Friend = ({asset}) => {
-    return (
-        <div>
-            <h2>
-                Friend
-                <p>has :{ asset}</p>
-            </h2>
-
-
-        </div>
-    );
+  return (
+    <div>
+      <h2>Friend</h2>
+      <p>Has Asset: {asset}</p>
+      <p>Gift from Context: {gift}</p>
+    </div>
+  );
 };
 
 export default Friend;

@@ -1,4 +1,5 @@
 import Friend from "../friend/friend";
+import GoodFriend from "../goodFriend/GoodFriend";
 
 
 const Cousin = ({name,asset}) => {
@@ -8,7 +9,7 @@ const Cousin = ({name,asset}) => {
             <p>{name}</p>
             <section>
                 { asset && <Friend asset={asset}></Friend> }
-                
+                {name==='arman' &&<GoodFriend></GoodFriend>}
             </section>
         </div>
     );
